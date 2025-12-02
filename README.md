@@ -16,24 +16,6 @@ This project is a **six-legged hexapod robot** that moves by controlling multipl
 | DC Jack Adapter Female | 1 | Connects the DC adapter to the servo driver or ESP32 safely. |
 | USB Cable | 1 | Used to program the ESP32 and optionally supply temporary power during development. |
 
----
-
-## How It Works
-
-1. The **ESP32 runs the movement program**, controlling walking patterns.  
-2. The **PCA9685 servo driver** receives signals from the ESP32 and drives the 12 servos.  
-3. Each **leg moves via its two servos** (hip and knee), enabling coordinated locomotion.  
-4. **External 5V power** ensures stable servo operation without overloading the microcontroller.
-
----
-
-## Notes
-
-- Ensure the servo power supply can handle the total current of all 12 servos.  
-- The jumper wires are ideal for prototyping; for permanent builds, consider soldered connections.  
-- Adjust servo angles in the program to fine-tune walking gait and balance.
-
-
 
 
 
